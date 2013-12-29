@@ -8,8 +8,8 @@ function start_nginx {
 
 # Set up files and directories if needed
 if [ ! -d $WWW_DIRECTORY ]; then
-    sudo mkdir $WWW_DIRECTORY
-    chmod 755 $WWW_DIRECTORY
+    sudo mkdir -p $WWW_DIRECTORY
+    sudo chmod 755 $WWW_DIRECTORY
 fi
 
 # Expose all files in ./www
